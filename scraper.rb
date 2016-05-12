@@ -1,3 +1,4 @@
+require 'scraperwiki'
 # encoding: ISO-8859-1
 require 'nokogiri'
 require 'mechanize'
@@ -69,7 +70,7 @@ def action(s_no)
 end
 
 #save_metadata("start",35988)
-#puts ScraperWiki.sqliteexecute("select max(scraped_number) from swdata")
+#puts ScraperWiki.sqliteexecute("select max(scraped_number) from data")
 
 #exit
 start = get_metadata("start",35988)
